@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import HeroSection from './components/HeroSection';
 
 export default function App() {
   return (
@@ -26,7 +25,6 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-        <HeroSection />
       </Router>
     </>
   );
