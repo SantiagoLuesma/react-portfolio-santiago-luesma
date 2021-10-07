@@ -75,18 +75,15 @@ export default function AboutSection() {
     <AboutSectionStyle>
       <div className="container">
         <div className="aboutSection__left">
-          <SectionTitle
-            subheading="Let me introduce myself"
-            heading="About me"
-          />
+          <SectionTitle subheading="Permítame presentarme" heading="Sobre mí" />
           <PText>
-            I am a freelance website designer and developer from Chittagong,
-            Bangladesh. I create professional websites. I love art and always
-            try to show unique views to the audience through my design.
+            Soy un desarrollador frontend de Córdoba, Argentina. Me dedico a
+            crear aplicaciones y sitios web. También tengo pasión por enseñar
+            aunque mucho tiempo no tengo. Amo la tecnología y el fútbol.
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnLink="/projects" btnText="Works" />
-            <Button btnLink="/about" btnText="Read More" outline />
+            <Button btnLink="/projects" btnText="Portfolio" />
+            <Button btnLink="/about" btnText="Más sobre mí" outline />
           </div>
         </div>
         <div className="aboutSection__right">

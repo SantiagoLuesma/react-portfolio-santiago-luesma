@@ -119,7 +119,7 @@ export default function NavMenu() {
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
           >
-            Home
+            Inicio
           </NavLink>
         </li>
         <li>
@@ -131,7 +131,7 @@ export default function NavMenu() {
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
           >
-            About
+            Sobre mí
           </NavLink>
         </li>
         <li>
@@ -143,7 +143,7 @@ export default function NavMenu() {
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
           >
-            Projects
+            Proyectos
           </NavLink>
         </li>
         <li>
@@ -155,7 +155,7 @@ export default function NavMenu() {
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
           >
-            Contact
+            Contacto
           </NavLink>
         </li>
       </ul>

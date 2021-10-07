@@ -158,11 +158,10 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              I am working as a freelance web designer and developer for 4
-              years. I love to design and make new web experiences for the
-              people.
+              Soy desarrollador de software, especializado en el frontend con
+              React JS. Pero siempre dispuesto a aprender tecnologías distintas.
             </PText>
-            <Button btnLink="/projects" btnText="see my works" />
+            <Button btnLink="/projects" btnText="ver mi portfolio" />
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
