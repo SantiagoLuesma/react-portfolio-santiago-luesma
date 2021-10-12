@@ -7,7 +7,7 @@ const ColStyles = styled.div`
     font-size: 2.4rem;
     margin-bottom: 2rem;
   }
-  .li {
+  li {
     margin-bottom: 1rem;
   }
   a {
@@ -19,12 +19,12 @@ export default function FooterCol({
   heading = 'col heading',
   links = [
     {
-      type: 'Links',
+      type: 'Link',
       title: 'Home',
       path: '/home',
     },
     {
-      type: 'Links',
+      type: 'Link',
       title: 'About',
       path: '/about',
     },
