@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
+import AboutInfoItem from '../components/AboutInfoItem';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -73,6 +74,12 @@ export default function About() {
               src="https://picsum.photos/id/4/566/769?grayscale"
               alt="Santiago Luesma"
             />
+          </div>
+        </div>
+        <div className="about__info__items">
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Education</h1>
+            <AboutInfoItem />
           </div>
         </div>
       </div>
