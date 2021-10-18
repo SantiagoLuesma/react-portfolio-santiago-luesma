@@ -77,9 +77,12 @@ export default function AboutSection() {
         <div className="aboutSection__left">
           <SectionTitle subheading="Permítame presentarme" heading="Sobre mí" />
           <PText>
-            Soy un desarrollador frontend de Córdoba, Argentina. Me dedico a
-            crear aplicaciones y sitios web. También tengo pasión por enseñar
-            aunque mucho tiempo no tengo. Amo la tecnología y el fútbol.
+            Soy un desarrollador frontend de Córdoba, Argentina.
+            <br /> <br />
+            Me dedico a crear sitios web con WordPress y me encuentro en la
+            búsqueda de mi primer trabajo como desarrollador frontend.
+            <br /> <br />
+            También tengo pasión por enseñar aunque mucho tiempo no tengo.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnLink="/projects" btnText="Portfolio" />

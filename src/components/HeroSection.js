@@ -158,8 +158,8 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              Soy desarrollador de software, especializado en el frontend con
-              React JS. Pero siempre dispuesto a aprender tecnologías distintas.
+              Soy desarrollador frontend, orientado al stack MERN. Pero siempre
+              dispuesto a aprender nuevas tecnologías.
             </PText>
             <Button btnLink="/projects" btnText="ver mi portfolio" />
           </div>

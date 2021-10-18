@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutInfoItem from '../components/AboutInfoItem';
+import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -27,6 +28,10 @@ const AboutPageStyles = styled.div`
       border-radius: 8px;
     }
   }
+  .about__heading {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+  }
   .about__info {
     margin-bottom: 4rem;
     .para {
@@ -36,6 +41,32 @@ const AboutPageStyles = styled.div`
   .right {
     img {
       border: 2px solid var(--gray-1);
+    }
+  }
+  .about__info__items {
+    margin-top: 15rem;
+  }
+  .about__info__item {
+    margin-bottom: 10rem;
+  }
+  .about__info__heading {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 10rem 0;
+    .top-section {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .about__subheading {
+      font-size: 1.8rem;
+    }
+    .about__heading {
+      font-size: 2.8rem;
+    }
+    .about__info__heading {
+      font-size: 3rem;
     }
   }
 `;
@@ -49,11 +80,13 @@ export default function About() {
             <p className="about__subheading">
               Hola, yo soy <span>Santiago Luesma</span>
             </p>
-            <h2 className="about__heading">Un desarrollador de software</h2>
+            <h2 className="about__heading">Desarrollador de frontend</h2>
             <div className="about__info">
               <PText>
                 Me llamo Santiago Luesma, tengo 27 años y soy de Córdoba,
-                Argentina.
+                Argentina. Sinceramente, en este momento, me considero un
+                Trainee Developer que está listo para comenzar a trabajar en
+                este mundo de la programación.
                 <br />
                 <br />
                 Actualmente trabajo de manera freelance haciendo sitios web con
@@ -78,11 +111,36 @@ export default function About() {
         </div>
         <div className="about__info__items">
           <div className="about__info__item">
-            <h1 className="about__info__heading">Education</h1>
-            <AboutInfoItem />
+            <h1 className="about__info__heading">Conocimientos</h1>
+            <AboutInfoItem
+              title="Tecnologías"
+              items={['HTML', 'CSS', 'JavaScript', 'React']}
+            />
+            <AboutInfoItem
+              title="Herramientas"
+              items={['GIT', 'Git Hub', 'Figma']}
+            />
+            <AboutInfoItem title="Metodologías" items={['Scrum', 'BEM']} />
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Experiencia</h1>
+            <AboutInfoItem
+              title="Freelance"
+              items={['Sitios web con WordPress']}
+            />
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Estudios</h1>
+            <AboutInfoItem
+              title="ITSC"
+              items={['Desarrollo de Software (Terciario)']}
+            />
+            <AboutInfoItem title="Platzi" items={['JavaScript']} />
+            <AboutInfoItem title="Platzi" items={['Frontend con React']} />
           </div>
         </div>
       </div>
+      <ContactBanner />
     </AboutPageStyles>
   );
 }
