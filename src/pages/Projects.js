@@ -44,7 +44,6 @@ const ProjectsStyles = styled.div`
   }
 `;
 
-
 export default function Projects() {
   const [searchText, setSearchText] = useState('');
   const [projectData, setProjectData] = useState(ProjectInfo);
